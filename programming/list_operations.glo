@@ -1,0 +1,4 @@
+VAR items = [1, 2, 3]
+APPEND(items, 4)
+PRINT(items)
+PRINT(LEN(items))

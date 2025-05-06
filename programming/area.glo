@@ -1,0 +1,4 @@
+VAR width = 5
+VAR height = 8
+VAR area = width * height
+PRINT(area)

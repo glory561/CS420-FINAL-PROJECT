@@ -1,0 +1,11 @@
+FOR i = 1 TO 101 THEN
+    IF i % 3 == 0 AND i % 5 == 0 THEN
+        PRINT("FizzBuzz")
+    ELIF i % 3 == 0 THEN
+        PRINT("Fizz")
+    ELIF i % 5 == 0 THEN
+        PRINT("Buzz")
+    ELSE
+        PRINT(i)
+    END
+END

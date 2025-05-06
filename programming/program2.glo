@@ -1,0 +1,14 @@
+VAR a = 10
+VAR b = 5
+
+PRINT("a + b =")
+PRINT(a + b)
+
+PRINT("a - b =")
+PRINT(a - b)
+
+PRINT("a * b =")
+PRINT(a * b)
+
+PRINT("a / b =")
+PRINT(a / b)

@@ -1,0 +1,16 @@
+VAR a = 1
+VAR b = -3
+VAR c = 2
+
+VAR discriminant = b * b - 4 * a * c
+
+IF discriminant >= 0 THEN
+  VAR sqrt_disc = discriminant ^ 0.5
+  VAR root1 = (-b + sqrt_disc) / (2 * a)
+  VAR root2 = (-b - sqrt_disc) / (2 * a)
+  PRINT("Roots:")
+  PRINT(root1)
+  PRINT(root2)
+ELSE
+  PRINT("No real roots")
+END

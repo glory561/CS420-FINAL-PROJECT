@@ -1,0 +1,6 @@
+FUN add(a, b)
+  RETURN a + b
+END
+
+VAR result = add(3, 4)
+PRINT(result)

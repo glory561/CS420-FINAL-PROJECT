@@ -1,0 +1,3 @@
+VAR x = 4
+VAR y = 6
+PRINT(x * y + 10)

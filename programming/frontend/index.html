@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GloLang</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <section class="wrapper">
+    <h1 class="brand">GloLang</h1>
+    <p class="tagline">
+      A programming language for educational and logic-based scripting. Inspired by simplicity, designed for learning.
+    </p>
+
+    <a class="github-btn" href="https://github.com/glory561/CS420-FINAL-PROJECT" target="_blank">
+      More on GitHub
+    </a>
+
+    <h2 class="section-title">Try it yourself</h2>
+
+    <div class="code-box">
+      <div class="filename">fizzbuzz.glo</div>
+      <pre><code>
+      FOR i = 1 TO 101 THEN
+          IF i % 3 == 0 AND i % 5 == 0 THEN
+              PRINT("FizzBuzz")
+          ELIF i % 3 == 0 THEN
+              PRINT("Fizz")
+          ELIF i % 5 == 0 THEN
+              PRINT("Buzz")
+          ELSE
+              PRINT(i)
+          END
+      END
+
+</code></pre>
+      <div class="command-line">python3 glo > run .glo</div>
+    </div>
+
+    <h2 class="section-title">Code Examples</h2>
+
+    <div class="code-carousel">
+      <div class="code-snippet active">
+        <div class="filename">hello_world.glo</div>
+        <code>PRINT("Hello from GloLang!")</code>
+      </div>
+
+      <div class="code-snippet">
+        <div class="filename">math_test.glo</div>
+        <code>
+          VAR x = 4
+          VAR y = 6
+          PRINT(x * y + 10)
+          </code>
+      </div>
+
+      <div class="code-snippet">
+        <div class="filename">fizzbuzz.glo</div>
+        <code>
+          FOR i = 1 TO 101 THEN
+          IF i % 3 == 0 AND i % 5 == 0 THEN
+              PRINT("FizzBuzz")
+          ELIF i % 3 == 0 THEN
+              PRINT("Fizz")
+          ELIF i % 5 == 0 THEN
+              PRINT("Buzz")
+          ELSE
+              PRINT(i)
+          END
+      END
+      </code>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const snippets = document.querySelectorAll('.code-snippet');
+    let current = 0;
+
+    setInterval(() => {
+      snippets[current].classList.remove('active');
+      current = (current + 1) % snippets.length;
+      snippets[current].classList.add('active');
+    }, 8000);
+  </script>
+</body>
+</html>
